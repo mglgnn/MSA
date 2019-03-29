@@ -1,2 +1,2 @@
 # MSA
-general tools and pipelines for multiple sequence alignment
+general tools and pipelines for multiple sequence alignment.....
