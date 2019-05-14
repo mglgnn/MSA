@@ -1,4 +1,6 @@
 # MSA
 general tools and pipelines for multiple sequence alignment.....
 
-mino change here
+minor change here
+
+major changes there
