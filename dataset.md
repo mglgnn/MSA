@@ -1,4 +1,4 @@
-# Data set
+# Description of how the data set has been obtained (provisional)
 As test data we used genomic sequences from the genomes of human, mouse, crab eating macaque and naked mole rat. Assembly versions were selected to have the possibility for both Ensembl orthology prediction and UCSC 100-way alignmnent to be exploited (for future validation over the same benchmark). Corresponding fasta were downloaded from UCSC repository, in their softmasked version:
 
 Homo sapiens (hg38 GCA_000001405)
