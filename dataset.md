@@ -1,6 +1,7 @@
 # Description of how the data set has been obtained (provisional)
 As test data we used genomic sequences from the genomes of human, mouse, crab eating macaque and naked mole rat. Assembly versions were selected to have the possibility for both Ensembl orthology prediction and UCSC 100-way alignmnent to be exploited (for future validation over the same benchmark). Corresponding fasta were downloaded from UCSC repository, in their softmasked version:
-
+$D=2\cdot w+1$  
+$H(i,j) = \dfrac{i-j}{|i-j|}\cdot\dfrac{(|i-j|-(w+1))}{(2w+1)}$  
 Homo sapiens (hg38 GCA_000001405)
 Mus musculus (mm10 GCA_000001635)
 Heterocephalus glaber (hetGla2 GCA_000247695)
