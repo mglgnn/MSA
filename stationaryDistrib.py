@@ -11,10 +11,6 @@ def findInvDistrib(P):
     A = P
     A = A.transpose()
     A = np.vstack([A-I, newrow])
-    print A
-
-
-
     
     B = np.zeros(len(P)+1)
     B[len(P)] = 1
