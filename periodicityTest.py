@@ -4,6 +4,12 @@ import networkx as nx
 from fractions import gcd
 from functools import reduce
 
+
+# https://stackoverflow.com/questions/29194588/python-gcd-for-list
+def find_gcd(list):
+    x = reduce(gcd, list)
+    return x
+
 def createGraphFromMC(P):
     # Create Directed Graph
     G=nx.DiGraph()
@@ -19,24 +25,6 @@ def createGraphFromMC(P):
     
     return G
 
-
-# a subcycle is a cycle entirely contained in some other cycle with len(longer) mod len(shorter) != 0
-def isSubcycle(shortCycle, longCycle):
-    print "test isSubcycle"
-
-    j = 0
-    for i in range(0, len(longCycle)):
-        if shortCycle[j] == longCycle[i]:
-            j += 1
-            if j == len(shortCycle):
-                print shortCycle, " in ", longCycle
-                return True
-
-    print shortCycle, " not in ", longCycle
-    return False
-
-
-# cycles is already sorted so comparisons are required from id upwards only
 def isPeriodicVertex(id, cycles):
     L = []
     for period in cycles:
@@ -69,10 +57,6 @@ def isPeriodicMC(P):
     return isMCperiodic
 
 
-# https://stackoverflow.com/questions/29194588/python-gcd-for-list
-def find_gcd(list):
-    x = reduce(gcd, list)
-    return x
 
 
 
