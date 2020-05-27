@@ -6,3 +6,5 @@ Todo:
 group functions relating tree construction, visiting, etc into a class 
 
 allow to extract subtrees and rescale distances accordingly 
+
+Recent changes...
